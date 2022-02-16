@@ -4,9 +4,11 @@ function five() {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.05;
+
 	let numberOfPeople = document.getElementById('people').value;
 	secondResult = result / numberOfPeople;
 	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
 }
@@ -18,6 +20,7 @@ function ten() {
 	let numberOfPeople = document.getElementById('people').value;
 	secondResult = result / numberOfPeople;
 	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
 }
@@ -29,6 +32,7 @@ function fifteen() {
 	let numberOfPeople = document.getElementById('people').value;
 	secondResult = result / numberOfPeople;
 	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
 }
@@ -40,6 +44,7 @@ function twentyFive() {
 	let numberOfPeople = document.getElementById('people').value;
 	secondResult = result / numberOfPeople;
 	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
 }
@@ -51,6 +56,7 @@ function fifty() {
 	let numberOfPeople = document.getElementById('people').value;
 	secondResult = result / numberOfPeople;
 	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
 }

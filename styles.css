@@ -1,0 +1,50 @@
+.container {
+	background-color: hsl(0, 0%, 100%);
+	/* background-color: red; */
+	font-family: Space Mono;
+	font-size: 28px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: lightblue;
+	font-family: Space Mono;
+	font-size: 25px;
+}
+
+#bill {
+	background-color: hsl(189, 41%, 97%);
+}
+
+#people {
+	background-color: hsl(189, 41%, 97%);
+}
+
+#tip {
+	background-color: hsl(189, 41%, 97%);
+}
+
+#totalTip {
+	background-color: hsl(189, 41%, 97%);
+}
+
+#total {
+	background-color: hsl(189, 41%, 97%);
+}
+
+.left {
+	/* background-color: yellow; */
+}
+
+.right {
+	padding-top: 40px;
+	/* background-color: green; */
+}
+
+.reset {
+	margin-top: 20px;
+}
