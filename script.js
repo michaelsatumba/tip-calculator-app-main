@@ -1,6 +1,6 @@
 // alert('hello');
 
-function five() {
+const five = () => {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.05;
@@ -11,9 +11,9 @@ function five() {
 	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
-}
+};
 
-function ten() {
+const ten = () => {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.1;
@@ -23,9 +23,9 @@ function ten() {
 	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
-}
+};
 
-function fifteen() {
+const fifteen = () => {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.15;
@@ -35,9 +35,9 @@ function fifteen() {
 	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
-}
+};
 
-function twentyFive() {
+const twentyFive = () => {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.25;
@@ -47,9 +47,9 @@ function twentyFive() {
 	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
-}
+};
 
-function fifty() {
+const fifty = () => {
 	let x = document.getElementById('bill').value;
 	// alert(x);
 	result = x * 0.5;
@@ -59,4 +59,21 @@ function fifty() {
 	document.getElementById('totalTip').value = result;
 	document.getElementById('tip').value = secondResult;
 	document.getElementById('total').value = sum;
-}
+};
+
+// const custom = () => {};
+
+const custom = document.querySelector('#custom');
+// .addEventListener('change', () => console.log('Changed!'));
+
+custom.addEventListener('input', () => {
+	// alert(custom.value);
+	let x = document.getElementById('bill').value;
+	result = (x * custom.value) / 100;
+	let numberOfPeople = document.getElementById('people').value;
+	secondResult = result / numberOfPeople;
+	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
+	document.getElementById('tip').value = secondResult;
+	document.getElementById('total').value = sum;
+});

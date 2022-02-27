@@ -1,3 +1,18 @@
+body {
+	background-color: hsl(172, 67%, 45%);
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(172, 67%, 45%);
+	font-family: Space Mono;
+	font-size: 25px;
+	letter-spacing: 0.5rem;
+}
+
 .container {
 	background-color: hsl(0, 0%, 100%);
 	/* background-color: red; */
@@ -5,15 +20,18 @@
 	font-size: 28px;
 	display: flex;
 	flex-direction: column;
+	border-top: solid 1px lightblue;
+	border-radius: 50px 50px 0px 0px;
 }
 
-.title {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: lightblue;
-	font-family: Space Mono;
-	font-size: 25px;
+.billDiv {
+	padding-top: 10px;
+	/* background-color: red; */
+}
+
+input {
+	/* padding: 10px 50px; */
+	width: 100%;
 }
 
 #bill {
@@ -24,27 +42,79 @@
 	background-color: hsl(189, 41%, 97%);
 }
 
-#tip {
+.btn {
+	background-color: hsl(183, 100%, 15%);
+}
+
+.btn:focus {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+}
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	/* margin: 10px; */
+	padding: 10px;
+}
+
+.number {
+	width: 120px;
+}
+
+/* .numberFifty {
+	width: 259px;
+} */
+
+#custom {
 	background-color: hsl(189, 41%, 97%);
+	width: 120px;
+	height: 40px;
+	/* margin-top: 10px; */
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tip {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	color: hsl(172, 67%, 45%);
 }
 
 #totalTip {
-	background-color: hsl(189, 41%, 97%);
+	background-color: transparent;
+	border: none;
+	color: hsl(172, 67%, 45%);
 }
 
 #total {
-	background-color: hsl(189, 41%, 97%);
+	background-color: transparent;
+	border: none;
+	color: hsl(172, 67%, 45%);
 }
 
 .left {
 	/* background-color: yellow; */
 }
 
-.right {
-	padding-top: 40px;
-	/* background-color: green; */
+.bottom-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 5px;
+	background-color: hsl(183, 100%, 15%);
+	color: white;
+	border-radius: 25px;
+}
+
+.resetDiv {
+	display: flex;
+	justify-content: center;
 }
 
 .reset {
-	margin-top: 20px;
+	margin: 20px 0px;
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+	font-weight: bold;
+	width: 100%;
 }

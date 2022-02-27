@@ -21,13 +21,20 @@
 <body>
 
   <div class="title">
-    <p>splitter</p>
+    <div>
+      <p>SPLI</p>
+    </div>
+
+    <div>
+      <p>TTER</p>
+    </div>
+
   </div>
 
 
   <div class="container">
 
-    <div class="left">
+    <div class="billDiv">
 
       <div>
         <p>Bill</p>
@@ -42,22 +49,33 @@
 
       <div>
         <p>Select Tip %</p>
-        <button class="btn btn-primary" onClick="five()">
-          5%
-        </button>
 
-        <button class="btn btn-primary" onClick="ten()">
-          10%
-        </button>
-        <button class="btn btn-primary" onClick="fifteen()">
-          15%
-        </button>
-        <button class="btn btn-primary" onClick="twentyFive()">
-          25%
-        </button>
-        <button class="btn btn-primary" onClick="fifty()">
-          50%
-        </button>
+        <div class="row">
+          <button class="btn btn-primary number" onClick="five()">
+            5%
+          </button>
+
+          <button class="btn btn-primary number" onClick="ten()">
+            10%
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-primary number" onClick="fifteen()">
+            15%
+          </button>
+
+          <button class="btn btn-primary number" onClick="twentyFive()">
+            25%
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-primary number" onClick="fifty()">
+            50%
+          </button>
+          <input type="number" name="" id="custom" placeholder="Custom">
+        </div>
 
       </div>
 
@@ -65,7 +83,7 @@
     </div>
 
 
-    <div class="right">
+    <div class="bottom-container">
 
       <div>
         <p>Tip Amount / person</p>
@@ -82,9 +100,13 @@
         <input id='total' type="number" />
       </div>
 
-      <button class="btn btn-primary reset" onClick="window.location.reload()">
-        Reset
-      </button>
+      <div class="resetDiv">
+
+
+        <button class="btn btn-primary reset" onClick="window.location.reload()">
+          Reset
+        </button>
+      </div>
     </div>
   </div>
 </body>
