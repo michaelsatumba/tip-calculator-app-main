@@ -56,11 +56,10 @@ HTML, then CSS, then JS, added bootstrap.
 - Bootstrap
 - Mobile-first workflow
 - Vanilla JavaScript
-- MapBox
 
 ### What I learned
 
-I learned how to use MapBox and gathered more experience using google and stackoverflow to debug bugs.
+I re-learned how to use the DOM and gathered more experience using google and stackoverflow to debug bugs.
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
