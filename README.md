@@ -66,15 +66,61 @@ I re-learned how to use the DOM and gathered more experience using google and st
 <!-- To see how you can add code snippets, see below: -->
 
 ```html
+   <div class="bottom-container">
 
+      <div>
+        <p>Tip Amount / person</p>
+        <input id='tip' type="number" />
+      </div>
+
+      <div>
+        <p>Total Tip</p>
+        <input id='totalTip' type="number" />
+      </div>
+
+      <div>
+        <p>Total / person</p>
+        <input id='total' type="number" />
+      </div>
 ```
 
 ```css
+.bottom-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 5px;
+	background-color: hsl(183, 100%, 15%);
+	color: white;
+	border-radius: 25px;
+}
 
+.resetDiv {
+	display: flex;
+	justify-content: center;
+}
+
+.reset {
+	margin: 20px 0px;
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+	font-weight: bold;
+	width: 100%;
+}
 ```
 
 ```js
+const five = () => {
+	let x = document.getElementById('bill').value;
+	// alert(x);
+	result = x * 0.05;
 
+	let numberOfPeople = document.getElementById('people').value;
+	secondResult = result / numberOfPeople;
+	sum = x / numberOfPeople;
+	document.getElementById('totalTip').value = result;
+	document.getElementById('tip').value = secondResult;
+	document.getElementById('total').value = sum;
+};
 ```
 
 <!-- If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more. -->
